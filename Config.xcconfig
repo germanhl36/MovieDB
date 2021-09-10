@@ -1,0 +1,10 @@
+//
+//  Config.xcconfig
+//  MovieDB
+//
+//  Created by German Huerta on 08/09/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+MOVIEDB_KEY = c936fd93e894c124f7cef2a4137e6668
