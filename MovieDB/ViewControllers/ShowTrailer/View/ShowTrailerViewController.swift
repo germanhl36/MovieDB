@@ -12,6 +12,8 @@ import WebKit
 class ShowTrailerViewController: UIViewController {
     private var viewModel:TrailerItemProtocol!
     @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var closeButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.updateUIContent()

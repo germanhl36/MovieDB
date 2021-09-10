@@ -48,6 +48,16 @@ struct DetailViewModel:MovieItemDetailProtocol {
     }
     
     func getReleaseDate() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let date = dateFormatter.date(from:self.releaseDate)!
+        
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year], from: date)
+        if let year = components.year {
+            return String(year)
+        }
+        
         return self.releaseDate
     }
     

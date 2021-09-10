@@ -12,7 +12,7 @@
         <!--Home View Controller-->
         <scene sceneID="vq4-qz-EIm">
             <objects>
-                <collectionViewController id="8AT-LP-URP" customClass="HomeViewController" customModule="MovieDB" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8AT-LP-URP" customClass="HomeViewController" customModule="MovieDB" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Jxd-FG-dtz">
                         <rect key="frame" x="0.0" y="0.0" width="475" height="370"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,6 +287,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="closeButton" destination="hNm-LC-BVB" id="3DQ-Ca-rLf"/>
                         <outlet property="webView" destination="8zS-Yx-4pg" id="qaZ-zS-ASt"/>
                     </connections>
                 </viewController>
